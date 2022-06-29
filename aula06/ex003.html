@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Script</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!!</h1>
+    
+    <script> 
+        var n1 = Number(window.prompt('Digite um número: ')) //window.prompt sempre retorna uma variável do tipo string
+        var n2 = Number(window.prompt('Digite outro número: ')) //string
+        var soma = n1 + n2 // (string + string) -> concatenação
+        window.alert(`A soma entre ${n1} e ${n2} é ${soma.toString()} !!`)
+        // (number + number) -> soma de números
+        // (string + string) -> concatenação
+
+        /*
+            Existem 3 maneiras de transformar uma variável string em number:
+
+            Number.parseInt(f) --> para inteiro
+            Number.parseFloat(f) --> para real
+            Number(f) --> identifica automaticamente se a string apresenta um número real ou inteiro 
+
+            parse -> transformar
+            Float (flutuar, ponto flutuante) -> número com . 
+        */
+
+        /*
+            Existem 2 maneiras de transformar uma variável number em string:
+
+            String(n)
+            n.toString()
+        */
+    </script>
+</body>
+</html>
